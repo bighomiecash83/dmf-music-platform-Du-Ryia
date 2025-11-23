@@ -70,9 +70,6 @@ function createHubComponent() {
   hub.appendChild(featured);
   hub.appendChild(genresSection);
   
-  // Add styles
-  addStyles();
-  
   return hub;
 }
 
@@ -201,6 +198,9 @@ function addStyles() {
   `;
   document.head.appendChild(style);
 }
+
+// Add styles once
+addStyles();
 
 // Initialize the hub
 document.body.appendChild(createHubComponent());
